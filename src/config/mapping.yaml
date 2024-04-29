@@ -1,0 +1,31 @@
+# ad element mapping
+ELEMENT_MAP_TYPE:
+  text: 'text'
+  icon: 'icon'
+  background: 'background'
+
+# Position Map
+POSITION_MAP:
+  top: "top"
+  bottom: "bottom"
+  left: "left"
+  right: "right"
+  middle: "center"
+  top-left: "top"
+  top-right: "top"
+  undefined: "undefined"
+
+# Position Priority
+POSITION_PRIORITY:
+  top: 0
+  bottom: 1
+  left: 2
+  right: 3
+  center: 4
+  undefined: 5
+
+# Size Priority
+SIZE_PRIORITY:
+  small: 0
+  large: 1
+  undefined: 2

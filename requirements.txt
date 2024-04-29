@@ -1,0 +1,11 @@
+numpy
+pandas
+lark
+PyYAML
+tqdm
+scipy
+matplotlib
+SentencePiece
+transformers
+deepspeed
+wandb

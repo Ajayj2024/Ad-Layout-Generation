@@ -1,0 +1,30 @@
+# Dataset arguments
+DATASET:
+  data_root_dir: 'dataset'
+  data_stage1_dir: 'dataset/stage1'
+  grammar_file_path: 'src/ir/grammar_ad.lark'
+
+# Model arguments
+MODEL_ARGUMENTS:
+  base_model: 'google/t5-v1_1-small'
+  generation_max_length: 512
+  tuning_method: 'finetune'
+  num_prompt_tokens: 100
+  prompt_init_method: 'vocab'
+
+# Train Arguments
+TRAIN_ARGUMENTS:
+  learning_rate: 1e-4
+  weight_decay: 1e-5
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1e-08
+  label_smoothing_factor: 0.0
+
+  output_dir: 'checkpoints/parse_stage'
+  prediction_dir: 'predictions/parse_stage'
+
+  seed: 42
+  local_rank: -1
+  epochs: 2
+  eval_micro_batch_size: 2
