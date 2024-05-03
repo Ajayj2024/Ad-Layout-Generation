@@ -35,6 +35,8 @@ def propotionality_scaling_of_coordinates(ad_info: dict, new_img_size: list):
         
     return explicit_constraint
 
+def org_coordinates():
+  pass
 
 if __name__ == "__main__":
     ad_info = {

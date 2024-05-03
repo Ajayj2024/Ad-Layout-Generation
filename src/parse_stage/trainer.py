@@ -13,7 +13,7 @@ import transformers
 from transformers.trainer_pt_utils import LabelSmoother
 from transformers import AutoTokenizer
 # import deepspeed as ds
-# import wandb
+import wandb
 import numpy as np
 from torch.utils.data import Dataset, DataLoader, DistributedSampler
 
@@ -321,7 +321,7 @@ class EvaluateFn:
 #                 'trainer': self.TRAINER_NAME
 #             })
 #             hypara_config.update(experiment_config)
-#             wandb.init(project=project_name, config=hypara_config)
+            # wandb.init(project=project_name, config=hypara_config)
 #             shutil.copy(self.args.deepscale_config, os.path.join(self.output_dir, 'ds_config.json'))
 #         torch.distributed.barrier()
         

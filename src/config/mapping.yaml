@@ -1,8 +1,15 @@
 # ad element mapping
 ELEMENT_MAP_TYPE:
   text: 'text'
-  icon: 'icon'
-  background: 'background'
+  social_media_icon: 'icon'
+  background_image: 'image'
+  logo: 'logo'
+  home_delivery_text: 'delivery text'
+  button: 'button'
+  contact: 'contact us'
+  discount: 'discount'
+  qr_code: 'qr code'
+
 
 # Position Map
 POSITION_MAP:

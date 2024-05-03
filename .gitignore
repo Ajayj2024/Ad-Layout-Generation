@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 # folders
+/labelImg
 /ipynb_checkpoints
 /checkpoints
 /predictions
@@ -11,6 +12,8 @@ __pycache__/
 /ad_creative
 /logs
 /temp
+/wandb
+flagged
 /out
 # C extensions
 *.so

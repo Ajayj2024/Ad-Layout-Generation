@@ -3,3 +3,18 @@ LABELS = {
     'text': 1,
     'icon': 2
 }
+
+ELEMENTS = {
+    'text': 'text',
+    'social_media_icon': 'social media',
+    'background_image': 'image',
+    'logo': 'logo',
+    'delivery_text': 'delivery text',
+    'button': 'button',
+    'contact': 'contact',
+    'discount': 'discount',
+    'qr_code': 'qr code',
+    'website': 'website',
+    'price': 'price',
+
+}

@@ -11,8 +11,8 @@ class Config:
         parser = argparse.ArgumentParser()
 
         # ----------training args------------
-        parser.add_argument("--epochs", default=50, type=int)
-        parser.add_argument("--batch_size", default=8, type=int)
+        parser.add_argument("--epochs", default=1, type=int)
+        parser.add_argument("--batch_size", default=2, type=int)
         parser.add_argument("--lr", default=1e-4, type=float)
         parser.add_argument("--weight_decay", default=0, type=float)
         parser.add_argument("--seed", default=42, type=int)
@@ -39,7 +39,7 @@ class Config:
 
         # -----------data args----------------
         parser.add_argument("--shuffle", default="true", type=is_true, help="shuffle or not when training")
-        parser.add_argument("--num_workers", default=8, type=int)
+        parser.add_argument("--num_workers", default=1, type=int)
         parser.add_argument("--dataset_name", default='web', type=str)
 
         parser.add_argument("--train_source_file", default="train_source.txt", type=str)
@@ -52,8 +52,8 @@ class Config:
         parser.add_argument("--test_prediction_ir", default="true", type=is_true)
 
         # -----------IO args---------------
-        parser.add_argument("--data_dir", type=str, default=os.getenv('AMLT_DATA_DIR', './datasets/'), help="data dir")
-        parser.add_argument("--out_dir", type=str, default=os.getenv('AMLT_OUTPUT_DIR', './output/'), help="output directory")
+        parser.add_argument("--data_dir", type=str, default= 'dataset/stage2/pretrain', help="data dir")
+        parser.add_argument("--out_dir", type=str, default= 'prediction/stage2', help="output directory")
 
         # -----------sampling---------------
         parser.add_argument("--temperature", type=float, default=0.7)

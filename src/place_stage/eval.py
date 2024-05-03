@@ -1,6 +1,8 @@
-
+from sys, os
+sys.path.append(os.path.join(os.getcwd(), 'src'))
 from config.config import Config
 from utils.file_utils import *
+from evaluation.metrics import compute_metrics
 if __name__ == "__main__":
     config = Config()
     set_seed(config.args.seed)
