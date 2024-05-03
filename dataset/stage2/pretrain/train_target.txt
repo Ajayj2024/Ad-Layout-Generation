@@ -1,0 +1,4 @@
+web view 0 0 144 239
+image 0 198 34 35 | image 109 198 35 35 | text 2 177 139 18 | video 0 34 144 144
+icon 109 198 29 35 | image 5 198 29 35 | text 52 131 39 12 | text 41 33 61 88 | text 49 121 45 9 | video 49 146 45 44 
+input 121 50 17 9 | text 0 35 52 11 | text 5 113 40 10 | text 107 163 28 10 | text 112 130 23 10 | text 107 147 28 9 | text 0 183 144 7 | text 5 50 33 9 | text 0 63 144 19 | text 0 98 44 12 | text 79 113 56 10 | text 5 130 44 10 | text 5 147 22 9 | text 5 163 21 10 

@@ -148,7 +148,7 @@ class DatasetLoad(Dataset):
         If the there is no train, val, test jsonl files for forming data then this function is called to divide the 
         whole json file to train, val, test. If divides the data in .jsonl format
         """
-        base_jsonl = 'all.jsonl'
+        base_jsonl = 'all_data.jsonl'
         if not os.path.exists(os.path.join(self.root_dir, base_jsonl)):
             raise FileExistsError(f"No such {base_jsonl} file exists")
         split_file_names = ['train.jsonl', 'val.jsonl', 'test.jsonl']
@@ -159,7 +159,7 @@ class DatasetLoad(Dataset):
         train_data, val_data, test_data = list(), list(), list()
         # seperating the different type of samples, ex: singleinfo, multiinfo etc..
         for sam in samples:
-            sample_by_type[sam['region_type']].append(sam)
+            sample_by_type[sam['type']].append(sam)
             
         for sam_of_type in sample_by_type.values():
             # divide samples by region_ids
