@@ -126,9 +126,9 @@ class IRProcessor:
         
         result = ir.replace("[", " [ ").replace("]", " ] ").strip().lower()
         result = result.replace(" : ", ":")
-        result = re.sub(r"prop:(.*?)'", r"prop:\g<1> '", result)
+        result = re.sub(r"attr:(.*?)'", r"prop:\g<1> '", result)
         if remove_attrs:
-            result = re.sub(r"\[\s*prop:(value|size|position|repeat)\s*'.*?'\s*\]", r"", result)
+            result = re.sub(r"\[\s*attr:(value|size|position|repeat)\s*'.*?'\s*\]", r"", result)
             
         if recover_labels:
             for tag, new_tag in self.TAG_RENAMES[1:]:

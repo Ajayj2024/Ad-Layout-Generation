@@ -10,6 +10,7 @@ __pycache__/
 /predictions
 # /dataset
 /ad_creative
+/Layout Generation Data
 /logs
 /temp
 /wandb

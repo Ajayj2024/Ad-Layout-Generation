@@ -116,7 +116,7 @@ class PlacementIR:
         constraints = []
         for ele in elements:
             constraints.extend(ele.get_elements_lst())
-        return f"{region_type}: " + '|'.join(constraints)
+        return f"{region_type} : " + ' | '.join(constraints)
         
         
 class ConstraintExecutor:

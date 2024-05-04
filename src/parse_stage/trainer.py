@@ -17,7 +17,7 @@ import wandb
 import numpy as np
 from torch.utils.data import Dataset, DataLoader, DistributedSampler
 
-from config.dictionary import LABELS
+from config.dictionary import LABELS, ELEMENTS
 from config.config import CONFIG
 from ir.executor import ConstraintExecutor
 from parse_stage.llm_models.pretrained_llm import PreTrainedLM
@@ -173,7 +173,7 @@ class EvaluateFn:
             _pred_seq = self.executor.get_constraints(pred_lf)
         except:
             return False
-        label_set = LABELS[self.dataset_name]
+        label_set = list(ELEMENTS.values())
         _pattern = f"((?:{'|'.join(label_set)}) [^ ]+ [^ ]+)"
         _gold_constraint = Counter(re.findall(_pattern, _gold_seq))
         _pred_constraint = Counter(re.findall(_pattern, _pred_seq))
@@ -216,6 +216,16 @@ class EvaluateFn:
        
         return predictions, num_correct, num_element_correct, num_set_correct
 
+# def metrics(gold_ir, pred_ir):
+#     ir_processor = IRProcessor()
+#     print(ir_processor.postprocess(gold_ir, remove_attrs= True))
+#     print(ir_processor.postprocess(pred_ir))
+    
+# if __name__ == "__main__":
+#     gold_ir = "[region: ElectronicDevice [el:text [attr:position'right']] [el:image [attr:position'left'] [attr:position'large']] [el:text [attr:position'right']] [el:price [attr:position'right']] [el:contact]]" 
+#     pred_ir = "[region: ElectronicDevice [el:text [attr:position'right']] [el:image [attr:position'left'] [attr:position'large']] [el:text [attr:position'right']] [el:price [attr:position'right']] [el:contact]]" 
+#     metrics(gold_ir, pred_ir)
+    
 # if __name__ == "__main__":
 #     print("Step 1")
 #     text_processor = TextPreprocessor()

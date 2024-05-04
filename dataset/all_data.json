@@ -30,7 +30,7 @@
     {
         "file_name": "burger/392.png",
         "region": "Food",
-        "text": "Need an Burger ad, huge text on top, product image is big, a button on left, delivery text at right side, logo",
+        "text": "Need an Burger ad, huge text on top, product image is big, a button on left, delivery text at right side,social media, logo",
         "ir": "[region:Food [el:text [attr:position'top'] [attr:size'large']] [el:image [attr:size'large']] [el:button [attr:position'left']] [el:delivery text [attr:position'right']] [el:social media] [el:logo]]"
         
     },
@@ -45,14 +45,14 @@
         "file_name": "pizza/7_april_1.png",
         "region": "Food",
         "text": "pizza ad, contains 3 images, a text heading at left, delivery call at top, timings at bottom",
-        "ir": "[region:Food [el:image [attr:repeat'3']] [el:text [attr:position'left']] [el:delivery text [attr:position'top']] [el:timings [attr:position'bottom']]]"
+        "ir": "[region:Food [el:image [attr:repeat'3']] [el:text [attr:position'left']] [el:delivery text [attr:position'top']] [el:timing [attr:position'bottom']]]"
         
     },
     {
         "file_name": "pizza/7_april_6.png",
         "region": "Food",
         "text": "Generate pizza ad,social media icons, contains a product image, a text heading, delivery call at bottom, timings at bottom",
-        "ir": "[region:Food [el:social media] [el:image] [el:text] [el:delivery text [attr:position'bottom']] [el:timings [attr:position'bottom']]]"
+        "ir": "[region:Food [el:social media] [el:image] [el:text] [el:delivery text [attr:position'bottom']] [el:timing [attr:position'bottom']]]"
         
     },
     {
@@ -205,12 +205,12 @@
         "file_name": "phone/c0761c65defb27678eeb8c8d132596ae.jpg",
         "region": "Electronic Device",
         "text": "a phone ad poster, model name on right, big phone image on left, feature text of phone on right, price on right, contact number",
-        "ir": "[region: ElectronicDevice [el:text [attr:position'right']] [el:image [attr:position'left'] [attr:position'large']] [el:text [attr:position'right']] [el:price [attr:position'right']] [el:contact]]"
+        "ir": "[region: ElectronicDevice [el:text [attr:position'right']] [el:image [attr:position'left'] [attr:size'large']] [el:text [attr:position'right']] [el:price [attr:position'right']] [el:contact]]"
         
     },
 
     {
-        "file_name": "phone/phone1.png",
+        "file_name": "phone/phone1.jpg",
         "region": "Electronic Device",
         "text": "a phone advertisement, logo, model name on top, phone image, feature text of phone on right, price on right, shop now button on bottom, contact number on left, social media icons",
         "ir": "[region: ElectronicDevice [el:text] [el:text [attr:position'top']] [el:image] [el:text [attr:position'right']] [el:price [attr:position'right']] [el:button] [el:contact] [el:social media]]"
