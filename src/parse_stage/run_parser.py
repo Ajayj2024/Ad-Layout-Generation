@@ -29,7 +29,7 @@ class DataArguments:
     Arguments for dataset
     """
     data_arguments = config.params['DATASET']
-    data_root_dir: str = field(default = data_arguments['data_stage1_dir'],
+    data_root_dir: str = field(default = data_arguments['data_root_dir'],
                                metadata={"help": "data root dir"})
     
     ir_remove_value: bool = field(default=False, 
@@ -133,7 +133,7 @@ class TrainArguments:
 
 
     do_train: bool = field(default= False, metadata={"help": "Whether to run training."})
-    do_eval: bool = field(default=True, metadata={"help": "Whether to run eval on the dev set."})
+    do_eval: bool = field(default= False, metadata={"help": "Whether to run eval on the dev set."})
     do_predict: bool = field(default=False, metadata={"help": "Whether to run predictions on the test set."})
     training_from_scratch: bool = field(default=False, metadata={"help": "Whether to train from scratch."})
 
@@ -223,16 +223,17 @@ def main():
                                replace_value=data_args.replace_explicit_value)
     train_dataset, eval_dataset = None, None
     if training_args.do_train:
-        train_dataset = DatasetLoad(data_args.data_root_dir, 'train', tokenizer= tokenizer, 
+        train_dataset = DatasetLoad(split='train', tokenizer= tokenizer, 
                                     ir_processor=ir_processor, text_processor=text_processor)
-        eval_dataset = DatasetLoad(data_args.data_root_dir, 'val', tokenizer= tokenizer, 
+        eval_dataset = DatasetLoad(split='val', tokenizer= tokenizer, 
                                    ir_processor=ir_processor, text_processor=text_processor)
         logging.info("Datset Loaded for training")
-        if is_debug: print("Load Data")
+        print("Train and val Data Loded")
     else:
-        eval_dataset = DatasetLoad(data_args.data_root_dir, data_args.eval_split, tokenizer=tokenizer, 
+        eval_dataset = DatasetLoad(split= data_args.eval_split, tokenizer=tokenizer, 
                                    ir_processor= ir_processor,
                                    text_processor= text_processor)
+        print("Eval data loaded")
     collate_fn = CollateFn(pad_id=tokenizer.pad_token_id)
 
     eval_fn = EvaluateFn(tokenizer, text_processor, ir_processor, do_predict=True,
@@ -257,6 +258,7 @@ def main():
         #         optimizer=optimizer
         #     )
         # else:
+        print("Training")
         trainer = BasicTrainer(args= training_args,
                                model= plm, 
                                train_dataset= train_dataset, 

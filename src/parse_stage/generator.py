@@ -35,6 +35,7 @@ class Generator:
         self.collate_fn = collate_fn
         self.metrics = metrics
         self.ckpt_path = args.output_dir
+        self.batch_size = args.eval_micro_batch_size
         self.prediction_dir = args.prediction_dir
         # self.ds_ckpt_tag = self.args.ds_ckpt_tag
         file_utils.makedirs(self.prediction_dir)
@@ -55,7 +56,7 @@ class Generator:
         # self.device = torch.device("cuda:{}".format(self._local_rank))
         # eval_micro_batch_size = self.args.eval_micro_batch_size
         self.dataloader = DataLoader(dataset=self.dataset,
-                                     batch_size=2,
+                                     batch_size=self.batch_size,
                                      collate_fn=self.collate_fn)
 
         if os.path.exists(os.path.join(self.ckpt_path, self.MODEL_BIN_NAME)):

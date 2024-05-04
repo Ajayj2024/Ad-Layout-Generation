@@ -8,6 +8,7 @@ import torch
 import torch.nn.functional as F  
 from torch.utils.data import Dataset
 from transformers import PreTrainedTokenizer, AutoTokenizer
+import shutil
 
 from utils import file_utils
 from parse_stage.dataset.preprocessor import TextPreprocessor, IRProcessor
@@ -17,11 +18,13 @@ from config.config import CONFIG
 
 # Gives infomation of each samples containing tokenizing info of both text and IR in dictionary format
 class DatasetLoad(Dataset):
-    def __init__(self, root_dir: str, 
+    def __init__(self,  
                  split: str,
                  text_processor: TextPreprocessor, 
                  ir_processor: IRProcessor,
-                 tokenizer: PreTrainedTokenizer):
+                 tokenizer: PreTrainedTokenizer,
+                 split_data= False,
+                 root_dir: str= 'dataset'):
         """Train, val, test dataset Loading. If train, val, test.jsonl are not present then they are created using 
             all.jsonl. A list of of sample info in dictionary is given with tokenizing infomation
 
@@ -36,19 +39,21 @@ class DatasetLoad(Dataset):
         """
         super().__init__()
         self.root_dir = root_dir
-        
+        if split_data:
+            shutil.rmtree(f'{self.root_dir}/parse_stage')
+            os.makedirs(f'{self.root_dir}/parse_stage')
         # check file is jsonl
-        if os.path.exists(os.path.join(self.root_dir, f"{split}.jsonl")):
-            self.split_path = os.path.join(self.root_dir, f"{split}.jsonl")
+        if os.path.exists(os.path.join(self.root_dir, f"parse_stage/{split}.jsonl")):
+            self.split_path = os.path.join(self.root_dir, f"parse_stage/{split}.jsonl")
         
         # checks file if it is json   
-        elif os.path.exists(os.path.join(self.root_dir, f"{split}.json")):
-            self.split_path = os.path.join(self.root_dir, f"{split}.json")
+        elif os.path.exists(os.path.join(self.root_dir, f"parse_stage/{split}.json")):
+            self.split_path = os.path.join(self.root_dir, f"parse_stage/{split}.json")
             
         # if there is no such file named with $split
         else:
             self.create_dataset()
-            self.split_path = os.path.join(self.root_dir, f"{split}.jsonl")
+            self.split_path = os.path.join(self.root_dir, f"parse_stage/{split}.jsonl")
         
         self.text_processor = text_processor
         self.ir_processor = ir_processor
@@ -70,8 +75,8 @@ class DatasetLoad(Dataset):
                 if _temp is None: continue
                 
                 self.data.append(_temp)
-            if CONFIG.debug:
-                print(self.data[0])
+            # if CONFIG.debug:
+            #     print(self.data)
         except CustomeException as ce:
             raise ce
         
@@ -96,7 +101,7 @@ class DatasetLoad(Dataset):
             print("No Intermediate Representation")
             return None     
         
-        _temp_id, region_type = _temp['region_id'], _temp['region_type']
+        _temp_id, region_type = _temp['file_name'], _temp['region']
         
         # Preprocessing of prompt and IR
         ## preprocessing the prompt
@@ -148,46 +153,47 @@ class DatasetLoad(Dataset):
         If the there is no train, val, test jsonl files for forming data then this function is called to divide the 
         whole json file to train, val, test. If divides the data in .jsonl format
         """
-        base_jsonl = 'all_data.jsonl'
+        base_jsonl = 'all_data.json'
         if not os.path.exists(os.path.join(self.root_dir, base_jsonl)):
             raise FileExistsError(f"No such {base_jsonl} file exists")
         split_file_names = ['train.jsonl', 'val.jsonl', 'test.jsonl']
-        samples = file_utils.read_jsonl(os.path.join(self.root_dir, base_jsonl))
+        samples = file_utils.read_json(os.path.join(self.root_dir, base_jsonl))
+        # print(samples)
         sample_by_type = defaultdict(list)
         
         # Dividing data in ratio 80:10:10
         train_data, val_data, test_data = list(), list(), list()
         # seperating the different type of samples, ex: singleinfo, multiinfo etc..
         for sam in samples:
-            sample_by_type[sam['type']].append(sam)
+            sample_by_type[sam['region']].append(sam)
             
         for sam_of_type in sample_by_type.values():
             # divide samples by region_ids
-            samples_by_region_id = defaultdict(list)
+            samples_by_file_id = defaultdict(list)
             for sam in sam_of_type:
-                rid = sam['region_id']
-                samples_by_region_id[rid].append(sam)
+                fileid = sam['file_name']
+                samples_by_file_id[fileid].append(sam)
                 
-            region_ids = list(samples_by_region_id.keys())
+            file_ids = list(samples_by_file_id.keys())
             generator = torch.Generator().manual_seed(10)
-            shuffled_region_ids = torch.randperm(region_ids, generator= generator)
-            
-            N = len(shuffled_region_ids)
-            ratio = [N * 8, N * 9]
+            indices = torch.randperm(len(file_ids), generator= generator)
+            shuffled_file_ids = [file_ids[i] for i in indices]
+            N = len(indices)
+            ratio = [int(N * 0.8), int(N * 0.9)]
             
             # train data
-            for rid in shuffled_region_ids[:ratio[0]]:
-                train_data.extend(samples_by_region_id[rid])
+            for fid in shuffled_file_ids[:ratio[0]]:
+                train_data.extend(samples_by_file_id[fid])
             # val data
-            for rid in shuffled_region_ids[ratio[0]:ratio[1]]:
-                val_data.extend(samples_by_region_id[rid])
+            for fid in shuffled_file_ids[ratio[0]:ratio[1]]:
+                val_data.extend(samples_by_file_id[fid])
             # test data
-            for rid in shuffled_region_ids[ratio[1]:]:
-                test_data.extend(samples_by_region_id[rid])
-        
+            for fid in shuffled_file_ids[ratio[1]:]:
+                test_data.extend(samples_by_file_id[fid])
+        # print(train_data)
         # Saving train.jsonl, val.jsonl, test.jsonl     
         for split_data, jsonl_name in zip([train_data, val_data, test_data], split_file_names):
-            file_utils.write_jsonl(os.path.join(self.root_dir, jsonl_name), split_data)
+            file_utils.write_jsonl(os.path.join(self.root_dir, os.path.join('parse_stage',jsonl_name)), split_data)
             
         logging.info('Train, val, test data was splited and saved')
         
@@ -233,15 +239,15 @@ class CollateFn:
         return batch
 
 
-# if __name__ == "__main__":
-#     if CONFIG.debug: print("Dataset Loading")
-#     tokenizer = AutoTokenizer.from_pretrained('google-t5/t5-small', use_fast=False)
-#     dataset = DatasetLoad(root_dir= './dataset/stage1',
-#                           split= 'train',
-#                           text_processor= TextPreprocessor(),
-#                           ir_processor= IRProcessor(),
-#                           tokenizer= tokenizer
-#                           )
-#     print("Tokenizer pad_id:", tokenizer.pad_token_id)
-#     collate_fn = CollateFn(pad_id= tokenizer.pad_token_id)
-#     print(collate_fn(dataset.data))
+if __name__ == "__main__":
+    if CONFIG.debug: print("Dataset Loading")
+    tokenizer = AutoTokenizer.from_pretrained('google-t5/t5-small', use_fast=False)
+    dataset = DatasetLoad(split= 'train',
+                          text_processor= TextPreprocessor(),
+                          ir_processor= IRProcessor(),
+                          tokenizer= tokenizer,
+                          split_data= True
+                          )
+    # print("Tokenizer pad_id:", tokenizer.pad_token_id)
+    # collate_fn = CollateFn(pad_id= tokenizer.pad_token_id)
+    # print(collate_fn(dataset.data))

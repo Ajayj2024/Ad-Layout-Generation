@@ -17,7 +17,7 @@ POSITION_MAP:
   bottom: "bottom"
   left: "left"
   right: "right"
-  middle: "center"
+  center: "center"
   top-left: "top"
   top-right: "top"
   undefined: "undefined"

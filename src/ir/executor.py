@@ -132,6 +132,6 @@ class ConstraintExecutor:
 # if __name__ == "__main__":
 #     grammar_file_path = CONFIG.params['DATASET']['grammar_file_path']
 #     executor = ConstraintExecutor(grammar_file_path= grammar_file_path)
-#     input_ir = "[region:SingleInfo [el:icon [attr:position'top'] ] [el:text [attr:position'top'] ] [el:image [attr:size'large'] ] [el:image] [el:radio button [attr:repeat'2'] ] ]"
+#     input_ir = "[region:ElectronicDevice[el:logo [attr:position'left']] [el:text [attr:position'left']] [el:image] [el:price] [el:icon [attr:size'large'] [attr:repeat'3']]]"
 #     print(executor.get_constraints(input_ir))
 #     # print(ElementMapping(ele_type= 'element_type', ele_pos= 'position', ele_size= 'size', repeat_num= 3))

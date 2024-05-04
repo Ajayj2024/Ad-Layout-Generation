@@ -2,14 +2,13 @@ start: region
 
 region: "[region:" REGION_TYPE element* group* element* group* element* group* element* group* "]"
 
-REGION_TYPE: "SingleInfo"
+REGION_TYPE: "food" | "electronicdevice"
 
 element: "[el:" ELEMENT_TYPE attr*  "]"
 
-ELEMENT_TYPE: "advertisement" | "background image" | "button bar" | "card" | "checkbox" | "drawer"
-              | "icon" | "image" | "input" | "list item" | "modal" | "multi-tab"
-              | "on/off switch" | "pager indicator" | "radio button" | "slider" | "text button" | "text"
-              | "toolbar" | "web view"
+ELEMENT_TYPE: "text" | "image" | "social media" | "logo" | "delivery text" | "button"
+              | "contact" | "discount" | "qr code" | "website" | "price" | "timing"
+              | "address" | "company name" | "icon"
 
 attr: "[attr:" ATTR_TYPE ATTR_VALUE "]"
 

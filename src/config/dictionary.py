@@ -16,7 +16,7 @@ ELEMENTS = {
     'qr_code': 'qr code',
     'website': 'website',
     'price': 'price',
-    'timing': 'timming',
+    'timing': 'timing',
     'address': 'address',
     'company name': 'company name',
     'icon': 'icon'

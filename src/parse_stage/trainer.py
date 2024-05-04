@@ -87,7 +87,7 @@ class BasicTrainer:
         train_steps_per_epoch, val_steps_per_epoch = len(self.train_dataloader), len(self.val_dataloader)
         ckpt_metric_best_value = -1e+8 if self.is_metric_positive else np.inf
         epochs = self.args.num_epochs
-        for epoch in range(epochs):
+        for epoch in range(1,epochs + 1):
             self.model.train()
             with torch.enable_grad(), tqdm(total= train_steps_per_epoch) as progress_bar:
                 for idx,batch in enumerate(self.train_dataloader):
@@ -104,8 +104,7 @@ class BasicTrainer:
             self.model.eval()
             with torch.no_grad(), tqdm(total= val_steps_per_epoch) as progress_bar:
                 for data in self.val_dataloader:
-                    print("eval")
-                    batch_metrics, _ = eval_step(self.plm, data, self.device)
+                    batch_metrics, _ = eval_step(self.plm, data, self.device, epoch)
                     self._aggreate_metrics(batch_metrics)
                     progress_bar.update(1)
                     progress_bar.set_postfix(epoch=epoch, loss=loss.item())
@@ -144,7 +143,7 @@ class EvaluateFn:
         self.do_predict, self.generation_max_length = do_predict, generation_max_length
         self.executor = ConstraintExecutor('src/ir/grammar_ad.lark')
         
-    def __call__(self, model, batch, device):
+    def __call__(self, model, batch, device, epoch_num):
         text_ids, text_attention_mask = batch['text_ids'].to(device), batch['text_attention_mask'].to(device)
         label_ids = batch['ir_ids'].to(device)
         predictions = None
@@ -163,7 +162,9 @@ class EvaluateFn:
                 "num_set_correct": n_set_correct,
                 "num_examples": len(predictions),
             })
-        print('prediction',predictions)
+        print('Metrics:',metrics)
+        if epoch_num % 10 == 0:
+            print("Predictions:", predictions)
         return metrics, predictions
     
     def _is_set_accuracy(self, gold_lf, pred_lf):
@@ -189,7 +190,7 @@ class EvaluateFn:
         num_correct = 0
         num_element_correct = 0
         num_set_correct = 0
-        print('out_str', out_str)
+        
         for idx, ostr in enumerate(out_str):
             gold_lf = batch['logical_form'][idx]
             is_correct = (self.ir_processor.postprocess(ostr) == self.ir_processor.postprocess(gold_lf))
@@ -201,8 +202,8 @@ class EvaluateFn:
             )
 
             predictions.append({
-                "pred_lf": self.ir_processor.postprocess(ostr, recover_labels=True),
-                "gold_lf": self.ir_processor.postprocess(gold_lf, recover_labels=True),
+                "pred_ir": self.ir_processor.postprocess(ostr, recover_labels=True),
+                "gold_ir": self.ir_processor.postprocess(gold_lf, recover_labels=True),
                 "is_set_correct": is_set_correct
             })
             
@@ -212,6 +213,7 @@ class EvaluateFn:
             if is_correct: num_correct += 1
             if is_element_correct: num_element_correct += 1
             if is_set_correct: num_set_correct += 1
+       
         return predictions, num_correct, num_element_correct, num_set_correct
 
 # if __name__ == "__main__":

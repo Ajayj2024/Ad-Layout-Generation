@@ -36,7 +36,7 @@ def write_jsonl(path: str, data) -> None:
 def read_json(path: str):
     assetion_err(path)
     with open(path, 'r', encoding='utf8') as f:
-        return json.loads(f)
+        return json.load(f)
     
 # writes the data .json
 def write_json(path: str, data, indent: int = 2) -> None:
