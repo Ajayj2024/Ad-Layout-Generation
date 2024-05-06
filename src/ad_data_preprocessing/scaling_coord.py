@@ -14,8 +14,9 @@ def propotionality_scaling_of_coordinates(ad_info: dict, new_img_size: list):
         
     scaled_image_width = int(org_width * scaling_factor)
     scaled_image_height = int(org_height * scaling_factor)
-    for temp in list(elements.keys()):
-        x, y, w, h = elements[temp]
+    for temp in elements:
+        ele = temp["ele_type"]
+        x, y, w, h = temp["coordinates"]
        
         
         scaled_x = int(x * scaling_factor)
@@ -29,7 +30,7 @@ def propotionality_scaling_of_coordinates(ad_info: dict, new_img_size: list):
         if scaled_y + scaled_h > scaled_image_height:
             scaled_h = scaled_image_height - scaled_y
             
-        explicit_constraint += f"{temp} {scaled_x} {scaled_y} {scaled_w} {scaled_h} | "
+        explicit_constraint += f"{ele} {scaled_x} {scaled_y} {scaled_w} {scaled_h} | "
         
         
     return explicit_constraint

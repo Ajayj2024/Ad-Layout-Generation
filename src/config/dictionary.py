@@ -1,8 +1,4 @@
-LABELS = {
-    'background image': 0,
-    'text': 1,
-    'icon': 2
-}
+
 
 ELEMENTS = {
     'text': 'text',
@@ -22,3 +18,23 @@ ELEMENTS = {
     'icon': 'icon'
 
 }
+
+LABEL2ID = {
+    'text': 0,
+    'social media': 1,
+    'image': 2,
+    'logo': 3,
+    'delivery text': 4,
+    'button': 5,
+    'contact': 6,
+    'discount': 7,
+    'qr code': 8,
+    'website': 9,
+    'price': 10,
+    'timing': 11,
+    'address': 12,
+    'company name': 13,
+    'icon': 14
+}
+
+CANVAS_SIZE = [720, 720]

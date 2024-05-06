@@ -1,19 +1,18 @@
+import os, sys, re
+sys.path.append(os.path.join(os.getcwd(), 'src'))
+
 import multiprocessing as mp
-import os
-import re
 from collections import Counter
 from collections import OrderedDict as OD
 from itertools import chain
-
+from typing import Tuple
 import numpy as np
 import torch
 from pytorch_fid.fid_score import calculate_frechet_distance
 from scipy.optimize import linear_sum_assignment
-
 from evaluation.layout_net import LayoutNet
-from layout_placement.placement_utils.utils import CANVAS_SIZE, LABEL, LABEL2ID
-
-from .DOCSIM import get_layout_sim
+from config.dictionary import CANVAS_SIZE, LABEL2ID
+from similarity import LayoutsCompare
 
 
 class LayoutFID():
@@ -427,10 +426,17 @@ def compute_metrics(predictions, golds, training_golds, dataset_name):
     return predictions, metrics
 
 
-def _collect_attribute(seq_list, dataset):
+def _collect_attribute(seq_list: list) -> Tuple:
+    """
+    Args:
+        seq_list (list): List of sequence layouts
+
+    Returns:
+        Tuple: position, label, position_t, label_t, padding_mask_t 
+    """
     label, pos = [], []
     for layout_seq in seq_list:
-        _label, _pos = _findall_elements(layout_seq, dataset)
+        _label, _pos = _findall_elements(layout_seq)    # seperates the label and position coordinates
         label.append(_label)
         pos.append(_pos)
     pos_t = torch.zeros(len(label), 200, 4)
@@ -441,16 +447,25 @@ def _collect_attribute(seq_list, dataset):
         pos_t[i][0: len(_label)] = convert_ltwh_to_ltrb(_pos)
         label_t[i][0: len(_label)] = _label
         padding_mask_t[i][0: len(_label)] = 1
+        
     return pos, label, pos_t, label_t, padding_mask_t
 
 
-def _findall_elements(s, dataset):
-    labels = LABEL[dataset]
-    canvas_width, canvas_height = CANVAS_SIZE[dataset]
-    element_pattern = '(' + '|'.join(labels) + ')' + r' (\d+) (\d+) (\d+) (\d+)'
-    label2id = LABEL2ID[dataset]
+def _findall_elements(seq: str) -> Tuple[torch.tensor, torch.tensor]:
+    """This seperates the labels and coordinate  points seperately
 
-    elements = re.findall(element_pattern, s)
+    Args:
+        seq (str): It is layout sequence ex: "logo 46 47 50 40 | text 346 140 374 186"
+
+    Returns:
+        torch.tensor: returns the labels with ID and normalized coordinaetes
+    """
+    labels = list(LABEL2ID.keys())
+    canvas_width, canvas_height = CANVAS_SIZE
+    element_pattern = '(' + '|'.join(labels) + ')' + r' (\d+) (\d+) (\d+) (\d+)'
+    label2id = LABEL2ID
+
+    elements = re.findall(element_pattern, seq)
     label = torch.tensor(
         [label2id[element[0]] for element in elements]
     )
@@ -462,3 +477,11 @@ def _findall_elements(s, dataset):
         for element in elements
     ])
     return label, position
+
+
+if __name__ == "__main__":
+    lst = ["logo 46 47 50 40 | text 346 140 374 186 | qr code 677 44 43 46", 
+           "image 357 442 363 278 | discount 606 456 114 215", 
+           "contact 134 682 186 38 | button 355 683 156 37 | website 584 687 136 33"]
+    x = _collect_attribute(lst)
+    

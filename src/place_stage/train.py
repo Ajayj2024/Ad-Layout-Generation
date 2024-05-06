@@ -66,6 +66,6 @@ if __name__ == "__main__":
 
     if config.args.local_rank == 0 or config.args.local_rank == -1:
         logging.info(f"datasets loaded, train: {len(train_set)}, valid: {len(valid_set)}")
-
+    print("Training started........")
     trainer = Trainer(config, device, world_size)
     trainer.train(train_loader, valid_loader)

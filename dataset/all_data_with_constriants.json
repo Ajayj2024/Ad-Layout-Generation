@@ -7,57 +7,81 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button bottom undefined | contact undefined undefined | discount top large | image center undefined | logo undefined undefined | qr code undefined undefined | text top undefined | website bottom undefined",
-    "elements": {
-      "logo": [
-        69,
-        71,
-        75,
-        60
-      ],
-      "text": [
-        519,
-        211,
-        647,
-        280
-      ],
-      "qr code": [
-        1016,
-        67,
-        76,
-        70
-      ],
-      "image": [
-        536,
-        664,
-        594,
-        534
-      ],
-      "discount": [
-        910,
-        684,
-        279,
-        323
-      ],
-      "contact": [
-        202,
-        1024,
-        280,
-        84
-      ],
-      "button": [
-        533,
-        1025,
-        234,
-        79
-      ],
-      "website": [
-        876,
-        1031,
-        300,
-        64
-      ]
-    },
-    "plain_layout_seq": "logo 46 47 50 40 | text 346 140 374 186 | qr code 677 44 43 46 | image 357 442 363 278 | discount 606 456 114 215 | contact 134 682 186 38 | button 355 683 156 37 | website 584 687 136 33"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          69,
+          71,
+          75,
+          60
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          519,
+          211,
+          647,
+          280
+        ]
+      },
+      {
+        "ele_type": "qr code",
+        "coordinates": [
+          1016,
+          67,
+          76,
+          70
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          536,
+          664,
+          594,
+          534
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          910,
+          684,
+          279,
+          323
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          202,
+          1024,
+          280,
+          84
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          533,
+          1025,
+          234,
+          79
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          876,
+          1031,
+          300,
+          64
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 355 683 683 683 | contact 134 682 682 682 | discount 606 456 456 456 | image 357 442 442 442 | logo 46 47 47 47 | qr code 677 44 44 44 | text 346 140 140 140 | website 584 687 687 687 | "
   },
   {
     "file_name": "burger/03nov8.png",
@@ -67,39 +91,54 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | contact undefined undefined | image center undefined | text center large | website undefined undefined",
-    "elements": {
-      "text": [
-        559,
-        419,
-        985,
-        765
-      ],
-      "image": [
-        525,
-        642,
-        559,
-        550
-      ],
-      "contact": [
-        180,
-        1006,
-        277,
-        90
-      ],
-      "button": [
-        547,
-        1006,
-        267,
-        93
-      ],
-      "website": [
-        883,
-        1014,
-        276,
-        84
-      ]
-    },
-    "plain_layout_seq": "text 372 279 348 441 | image 350 428 370 292 | contact 120 670 184 50 | button 364 670 178 50 | website 588 676 132 44"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          559,
+          419,
+          985,
+          765
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          525,
+          642,
+          559,
+          550
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          180,
+          1006,
+          277,
+          90
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          547,
+          1006,
+          267,
+          93
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          883,
+          1014,
+          276,
+          84
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 364 670 670 670 | contact 120 670 670 670 | image 350 428 428 428 | text 372 279 279 279 | website 588 676 676 676 | "
   },
   {
     "file_name": "burger/24nov_6.png",
@@ -109,63 +148,90 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button bottom undefined | contact bottom undefined | delivery text right undefined | discount left undefined | image center undefined | social media top undefined | text top undefined | website bottom undefined",
-    "elements": {
-      "logo": [
-        88,
-        63,
-        109,
-        68
-      ],
-      "social media": [
-        1011,
-        76,
-        102,
-        82
-      ],
-      "text": [
-        529,
-        238,
-        643,
-        225
-      ],
-      "image": [
-        558,
-        640,
-        535,
-        551
-      ],
-      "discount": [
-        133,
-        795,
-        185,
-        125
-      ],
-      "delivery text": [
-        941,
-        734,
-        218,
-        118
-      ],
-      "contact": [
-        166,
-        1034,
-        260,
-        62
-      ],
-      "button": [
-        520,
-        1029,
-        192,
-        72
-      ],
-      "website": [
-        884,
-        1036,
-        321,
-        29
-      ]
-    },
-    "plain_layout_seq": "logo 58 42 72 45 | social media 674 50 46 54 | text 352 158 368 150 | image 372 426 348 294 | discount 88 530 123 83 | delivery text 627 489 93 78 | contact 110 689 173 31 | button 346 686 128 34 | website 589 690 131 19"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          88,
+          63,
+          109,
+          68
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          1011,
+          76,
+          102,
+          82
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          529,
+          238,
+          643,
+          225
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          558,
+          640,
+          535,
+          551
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          133,
+          795,
+          185,
+          125
+        ]
+      },
+      {
+        "ele_type": "delivery text",
+        "coordinates": [
+          941,
+          734,
+          218,
+          118
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          166,
+          1034,
+          260,
+          62
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          520,
+          1029,
+          192,
+          72
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          884,
+          1036,
+          321,
+          29
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 346 686 686 686 | contact 110 689 689 689 | delivery text 627 489 489 489 | discount 88 530 530 530 | image 372 426 426 426 | logo 58 42 42 42 | social media 674 50 50 50 | text 352 158 158 158 | website 589 690 690 690 | "
   },
   {
     "file_name": "burger/374.png",
@@ -175,39 +241,63 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : discount undefined undefined | discount undefined undefined | image center undefined | social media undefined undefined | text top large",
-    "elements": {
-      "social media": [
-        133,
-        73,
-        168,
-        54
-      ],
-      "logo": [
-        969,
-        74,
-        125,
-        59
-      ],
-      "text": [
-        529,
-        249,
-        754,
-        278
-      ],
-      "discount": [
-        1004,
-        626,
-        67,
-        391
-      ],
-      "image": [
-        550,
-        698,
-        707,
-        619
-      ]
-    },
-    "plain_layout_seq": "social media 88 48 112 36 | logo 646 49 74 39 | text 352 166 368 185 | discount 669 417 44 260 | image 366 465 354 255"
+    "elements": [
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          133,
+          73,
+          168,
+          54
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          969,
+          74,
+          125,
+          59
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          529,
+          249,
+          754,
+          278
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          78,
+          627,
+          83,
+          393
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          1004,
+          626,
+          67,
+          391
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          550,
+          698,
+          707,
+          619
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 52 418 418 418 | discount 669 417 417 417 | image 366 465 465 465 | logo 646 49 49 49 | social media 88 48 48 48 | text 352 166 166 166 | "
   },
   {
     "file_name": "burger/392.png",
@@ -217,45 +307,63 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button left undefined | delivery text right undefined | image undefined large | logo undefined undefined | social media undefined undefined | text top large",
-    "elements": {
-      "logo": [
-        92,
-        63,
-        122,
-        50
-      ],
-      "social media": [
-        978,
-        60,
-        158,
-        58
-      ],
-      "text": [
-        530,
-        179,
-        633,
-        204
-      ],
-      "image": [
-        528,
-        619,
-        876,
-        606
-      ],
-      "button": [
-        177,
-        1020,
-        272,
-        82
-      ],
-      "delivery text": [
-        872,
-        1011,
-        325,
-        77
-      ]
-    },
-    "plain_layout_seq": "logo 61 42 81 33 | social media 652 40 68 38 | text 353 119 367 136 | image 352 412 368 308 | button 118 680 181 40 | delivery text 581 674 139 46"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          92,
+          63,
+          122,
+          50
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          978,
+          60,
+          158,
+          58
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          530,
+          179,
+          633,
+          204
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          528,
+          619,
+          876,
+          606
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          177,
+          1020,
+          272,
+          82
+        ]
+      },
+      {
+        "ele_type": "delivery text",
+        "coordinates": [
+          872,
+          1011,
+          325,
+          77
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 118 680 680 680 | delivery text 581 674 674 674 | image 352 412 412 412 | logo 61 42 42 42 | social media 652 40 40 40 | text 353 119 119 119 | "
   },
   {
     "file_name": "burger/455.png",
@@ -265,45 +373,90 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : contact undefined undefined | discount left small | text undefined small | text undefined small | text undefined small | text undefined large | website undefined undefined",
-    "elements": {
-      "logo": [
-        78,
-        66,
-        76,
-        56
-      ],
-      "text": [
-        943,
-        764,
-        162,
-        141
-      ],
-      "discount": [
-        162,
-        400,
-        169,
-        149
-      ],
-      "contact": [
-        156,
-        1023,
-        229,
-        44
-      ],
-      "website": [
-        936,
-        1026,
-        225,
-        50
-      ],
-      "image": [
-        536,
-        585,
-        649,
-        575
-      ]
-    },
-    "plain_layout_seq": "logo 52 44 50 37 | text 628 509 92 94 | discount 108 266 112 99 | contact 104 682 152 29 | website 624 684 96 33 | image 357 390 363 330"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          78,
+          66,
+          76,
+          56
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          511,
+          172,
+          654,
+          251
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          162,
+          400,
+          169,
+          149
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          149,
+          795,
+          156,
+          146
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          571,
+          965,
+          224,
+          138
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          943,
+          764,
+          162,
+          141
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          156,
+          1023,
+          229,
+          44
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          936,
+          1026,
+          225,
+          50
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          536,
+          585,
+          649,
+          575
+        ]
+      }
+    ],
+    "plain_layout_seq": "contact 104 682 682 682 | discount 108 266 266 266 | image 357 390 390 390 | logo 52 44 44 44 | text 340 114 114 114 | text 99 530 530 530 | text 380 643 643 643 | text 628 509 509 509 | website 624 684 684 684 | "
   },
   {
     "file_name": "pizza/7_april_1.png",
@@ -313,39 +466,72 @@
     "ad_width": 900,
     "ad_height": 900,
     "serialize_constraints": "food : delivery text top undefined | image undefined undefined | image undefined undefined | image undefined undefined | text left undefined | timing bottom undefined",
-    "elements": {
-      "logo": [
-        61,
-        50,
-        90,
-        60
-      ],
-      "delivery text": [
-        753,
-        60,
-        211,
-        76
-      ],
-      "text": [
-        213,
-        238,
-        383,
-        212
-      ],
-      "timing": [
-        155,
-        824,
-        267,
-        71
-      ],
-      "image": [
-        679,
-        718,
-        441,
-        362
-      ]
-    },
-    "plain_layout_seq": "logo 48 40 72 48 | delivery text 602 48 118 60 | text 170 190 306 169 | timing 124 659 213 56 | image 543 574 177 146"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          61,
+          50,
+          90,
+          60
+        ]
+      },
+      {
+        "ele_type": "delivery text",
+        "coordinates": [
+          753,
+          60,
+          211,
+          76
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          213,
+          238,
+          383,
+          212
+        ]
+      },
+      {
+        "ele_type": "timing",
+        "coordinates": [
+          155,
+          824,
+          267,
+          71
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          272,
+          572,
+          424,
+          426
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          614,
+          311,
+          419,
+          434
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          679,
+          718,
+          441,
+          362
+        ]
+      }
+    ],
+    "plain_layout_seq": "delivery text 602 48 48 48 | image 217 457 457 457 | image 491 248 248 248 | image 543 574 574 574 | logo 48 40 40 40 | text 170 190 190 190 | timing 124 659 659 659 | "
   },
   {
     "file_name": "pizza/7_april_6.png",
@@ -355,39 +541,63 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : delivery text bottom undefined | image undefined undefined | social media undefined undefined | text undefined undefined | timing bottom undefined",
-    "elements": {
-      "logo": [
-        69,
-        56,
-        111,
-        80
-      ],
-      "social media": [
-        992,
-        60,
-        142,
-        50
-      ],
-      "text": [
-        181,
-        1032,
-        334,
-        81
-      ],
-      "image": [
-        573,
-        712,
-        861,
-        451
-      ],
-      "timing": [
-        885,
-        1026,
-        347,
-        74
-      ]
-    },
-    "plain_layout_seq": "logo 46 37 74 53 | social media 661 40 59 33 | text 120 688 222 32 | image 382 474 338 246 | timing 590 684 130 36"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          69,
+          56,
+          111,
+          80
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          992,
+          60,
+          142,
+          50
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          573,
+          218,
+          573,
+          291
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          573,
+          712,
+          861,
+          451
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          181,
+          1032,
+          334,
+          81
+        ]
+      },
+      {
+        "ele_type": "timing",
+        "coordinates": [
+          885,
+          1026,
+          347,
+          74
+        ]
+      }
+    ],
+    "plain_layout_seq": "image 382 474 474 474 | logo 46 37 37 37 | social media 661 40 40 40 | text 382 145 145 145 | text 120 688 688 688 | timing 590 684 684 684 | "
   },
   {
     "file_name": "pizza/4273.png",
@@ -397,45 +607,72 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | logo top undefined | price right large | text top large | text bottom small | website undefined undefined",
-    "elements": {
-      "logo": [
-        507,
-        71,
-        362,
-        91
-      ],
-      "text": [
-        558,
-        899,
-        876,
-        76
-      ],
-      "price": [
-        899,
-        523,
-        222,
-        262
-      ],
-      "image": [
-        513,
-        589,
-        588,
-        562
-      ],
-      "button": [
-        269,
-        1010,
-        477,
-        89
-      ],
-      "website": [
-        786,
-        1012,
-        436,
-        47
-      ]
-    },
-    "plain_layout_seq": "logo 338 47 241 60 | text 372 599 348 50 | price 599 348 121 174 | image 342 392 378 328 | button 179 673 318 47 | website 524 674 196 31"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          507,
+          71,
+          362,
+          91
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          538,
+          220,
+          619,
+          175
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          899,
+          523,
+          222,
+          262
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          513,
+          589,
+          588,
+          562
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          558,
+          899,
+          876,
+          76
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          269,
+          1010,
+          477,
+          89
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          786,
+          1012,
+          436,
+          47
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 179 673 673 673 | image 342 392 392 392 | logo 338 47 47 47 | price 599 348 348 348 | text 358 146 146 146 | text 372 599 599 599 | website 524 674 674 674 | "
   },
   {
     "file_name": "pizza/Food-Social-Media-Banner-07.png",
@@ -445,45 +682,63 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | delivery text bottom undefined | discount left undefined | text top large | website bottom undefined",
-    "elements": {
-      "text": [
-        348,
-        223,
-        619,
-        342
-      ],
-      "discount": [
-        155,
-        536,
-        209,
-        210
-      ],
-      "button": [
-        144,
-        1005,
-        194,
-        65
-      ],
-      "website": [
-        888,
-        1026,
-        315,
-        34
-      ],
-      "delivery text": [
-        908,
-        922,
-        262,
-        169
-      ],
-      "logo": [
-        973,
-        71,
-        121,
-        56
-      ]
-    },
-    "plain_layout_seq": "text 232 148 412 228 | discount 103 357 139 140 | button 96 670 129 43 | website 592 684 128 22 | delivery text 605 614 115 106 | logo 648 47 72 37"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          348,
+          223,
+          619,
+          342
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          155,
+          536,
+          209,
+          210
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          144,
+          1005,
+          194,
+          65
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          888,
+          1026,
+          315,
+          34
+        ]
+      },
+      {
+        "ele_type": "delivery text",
+        "coordinates": [
+          908,
+          922,
+          262,
+          169
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          973,
+          71,
+          121,
+          56
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 96 670 670 670 | delivery text 605 614 614 614 | discount 103 357 357 357 | logo 648 47 47 47 | text 232 148 148 148 | website 592 684 684 684 | "
   },
   {
     "file_name": "pizza/food_web_banner_06.png",
@@ -493,33 +748,54 @@
     "ad_width": 1920,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | delivery text bottom undefined | discount undefined undefined | text undefined small | text undefined large",
-    "elements": {
-      "button": [
-        435,
-        771,
-        198,
-        74
-      ],
-      "text": [
-        427,
-        673,
-        534,
-        82
-      ],
-      "discount": [
-        923,
-        322,
-        190,
-        171
-      ],
-      "delivery text": [
-        1661,
-        943,
-        166,
-        62
-      ]
-    },
-    "plain_layout_seq": "button 163 289 74 27 | text 160 252 200 30 | discount 346 120 71 64 | delivery text 622 353 62 23"
+    "elements": [
+      {
+        "ele_type": "button",
+        "coordinates": [
+          435,
+          771,
+          198,
+          74
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          429,
+          472,
+          686,
+          304
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          427,
+          673,
+          534,
+          82
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          923,
+          322,
+          190,
+          171
+        ]
+      },
+      {
+        "ele_type": "delivery text",
+        "coordinates": [
+          1661,
+          943,
+          166,
+          62
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 163 289 289 289 | delivery text 622 353 353 353 | discount 346 120 120 120 | text 160 177 177 177 | text 160 252 252 252 | "
   },
   {
     "file_name": "pizza/m038t0006_a_food_07jun23.png",
@@ -529,51 +805,72 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | contact bottom undefined | discount bottom undefined | text undefined undefined | website bottom undefined",
-    "elements": {
-      "social media": [
-        977,
-        79,
-        130,
-        79
-      ],
-      "contact": [
-        170,
-        981,
-        255,
-        64
-      ],
-      "website": [
-        166,
-        1024,
-        276,
-        30
-      ],
-      "button": [
-        544,
-        1005,
-        218,
-        64
-      ],
-      "discount": [
-        933,
-        953,
-        246,
-        172
-      ],
-      "text": [
-        556,
-        260,
-        764,
-        393
-      ],
-      "image": [
-        553,
-        640,
-        760,
-        576
-      ]
-    },
-    "plain_layout_seq": "social media 651 52 69 52 | contact 113 654 170 42 | website 110 682 184 20 | button 362 670 145 42 | discount 622 635 98 85 | text 370 173 350 262 | image 368 426 352 294"
+    "elements": [
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          977,
+          79,
+          130,
+          79
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          170,
+          981,
+          255,
+          64
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          166,
+          1024,
+          276,
+          30
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          544,
+          1005,
+          218,
+          64
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          933,
+          953,
+          246,
+          172
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          556,
+          260,
+          764,
+          393
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          553,
+          640,
+          760,
+          576
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 362 670 670 670 | contact 113 654 654 654 | discount 622 635 635 635 | image 368 426 426 426 | social media 651 52 52 52 | text 370 173 173 173 | website 110 682 682 682 | "
   },
   {
     "file_name": "biriyani/03december_5.png",
@@ -583,57 +880,81 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | contact undefined undefined | discount right undefined | qr code undefined undefined | text left undefined | website undefined undefined",
-    "elements": {
-      "logo": [
-        89,
-        74,
-        104,
-        72
-      ],
-      "qr code": [
-        1019,
-        60,
-        95,
-        92
-      ],
-      "text": [
-        290,
-        378,
-        528,
-        278
-      ],
-      "discount": [
-        939,
-        343,
-        249,
-        269
-      ],
-      "contact": [
-        191,
-        1017,
-        282,
-        87
-      ],
-      "button": [
-        542,
-        1016,
-        252,
-        76
-      ],
-      "website": [
-        871,
-        1021,
-        295,
-        70
-      ],
-      "image": [
-        694,
-        680,
-        736,
-        582
-      ]
-    },
-    "plain_layout_seq": "logo 59 49 69 48 | qr code 679 40 41 61 | text 193 252 352 185 | discount 626 228 94 179 | contact 127 678 188 42 | button 361 677 168 43 | website 580 680 140 40 | image 462 453 258 267"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          89,
+          74,
+          104,
+          72
+        ]
+      },
+      {
+        "ele_type": "qr code",
+        "coordinates": [
+          1019,
+          60,
+          95,
+          92
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          290,
+          378,
+          528,
+          278
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          939,
+          343,
+          249,
+          269
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          191,
+          1017,
+          282,
+          87
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          542,
+          1016,
+          252,
+          76
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          871,
+          1021,
+          295,
+          70
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          694,
+          680,
+          736,
+          582
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 361 677 677 677 | contact 127 678 678 678 | discount 626 228 228 228 | image 462 453 453 453 | logo 59 49 49 49 | qr code 679 40 40 40 | text 193 252 252 252 | website 580 680 680 680 | "
   },
   {
     "file_name": "biriyani/03december_10.png",
@@ -643,51 +964,72 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : button undefined undefined | contact undefined undefined | image undefined undefined | logo undefined undefined | social media undefined undefined | text undefined large | website undefined undefined",
-    "elements": {
-      "logo": [
-        62,
-        50,
-        83,
-        60
-      ],
-      "social media": [
-        970,
-        53,
-        185,
-        58
-      ],
-      "text": [
-        551,
-        312,
-        963,
-        330
-      ],
-      "image": [
-        552,
-        741,
-        892,
-        426
-      ],
-      "contact": [
-        175,
-        1005,
-        290,
-        75
-      ],
-      "button": [
-        543,
-        1007,
-        248,
-        78
-      ],
-      "website": [
-        879,
-        1012,
-        303,
-        70
-      ]
-    },
-    "plain_layout_seq": "logo 41 33 55 40 | social media 646 35 74 38 | text 367 208 353 220 | image 368 494 352 226 | contact 116 670 193 50 | button 362 671 165 49 | website 586 674 134 46"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          62,
+          50,
+          83,
+          60
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          970,
+          53,
+          185,
+          58
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          551,
+          312,
+          963,
+          330
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          552,
+          741,
+          892,
+          426
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          175,
+          1005,
+          290,
+          75
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          543,
+          1007,
+          248,
+          78
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          879,
+          1012,
+          303,
+          70
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 362 671 671 671 | contact 116 670 670 670 | image 368 494 494 494 | logo 41 33 33 33 | social media 646 35 35 35 | text 367 208 208 208 | website 586 674 674 674 | "
   },
   {
     "file_name": "biriyani/04december_9.png",
@@ -697,45 +1039,63 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : delivery text left large | discount right small | image undefined undefined | qr code undefined undefined | text undefined undefined",
-    "elements": {
-      "logo": [
-        73,
-        59,
-        103,
-        70
-      ],
-      "qr code": [
-        1005,
-        79,
-        102,
-        87
-      ],
-      "text": [
-        524,
-        169,
-        722,
-        208
-      ],
-      "image": [
-        517,
-        582,
-        692,
-        696
-      ],
-      "delivery text": [
-        201,
-        699,
-        121,
-        322
-      ],
-      "discount": [
-        845,
-        442,
-        99,
-        206
-      ]
-    },
-    "plain_layout_seq": "logo 48 39 68 46 | qr code 670 52 50 58 | text 349 112 371 138 | image 344 388 376 332 | delivery text 134 466 80 214 | discount 563 294 66 137"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          73,
+          59,
+          103,
+          70
+        ]
+      },
+      {
+        "ele_type": "qr code",
+        "coordinates": [
+          1005,
+          79,
+          102,
+          87
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          524,
+          169,
+          722,
+          208
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          517,
+          582,
+          692,
+          696
+        ]
+      },
+      {
+        "ele_type": "delivery text",
+        "coordinates": [
+          201,
+          699,
+          121,
+          322
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          845,
+          442,
+          99,
+          206
+        ]
+      }
+    ],
+    "plain_layout_seq": "delivery text 134 466 466 466 | discount 563 294 294 294 | image 344 388 388 388 | logo 48 39 39 39 | qr code 670 52 52 52 | text 349 112 112 112 | "
   },
   {
     "file_name": "biriyani/27nov_2.png",
@@ -745,39 +1105,54 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : discount undefined undefined | image undefined undefined | logo undefined undefined | qr code undefined undefined | qr code undefined undefined | text undefined undefined",
-    "elements": {
-      "logo": [
-        68,
-        56,
-        90,
-        51
-      ],
-      "qr code": [
-        1010,
-        67,
-        100,
-        97
-      ],
-      "text": [
-        551,
-        289,
-        653,
-        342
-      ],
-      "discount": [
-        837,
-        592,
-        191,
-        164
-      ],
-      "image": [
-        541,
-        730,
-        799,
-        391
-      ]
-    },
-    "plain_layout_seq": "logo 45 37 60 34 | qr code 673 44 47 64 | text 367 192 353 228 | discount 558 394 127 109 | image 360 486 360 234"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          68,
+          56,
+          90,
+          51
+        ]
+      },
+      {
+        "ele_type": "qr code",
+        "coordinates": [
+          1010,
+          67,
+          100,
+          97
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          551,
+          289,
+          653,
+          342
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          837,
+          592,
+          191,
+          164
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          541,
+          730,
+          799,
+          391
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 558 394 394 394 | image 360 486 486 486 | logo 45 37 37 37 | qr code 673 44 44 44 | text 367 192 192 192 | "
   },
   {
     "file_name": "biriyani/27nov_4.png",
@@ -787,27 +1162,36 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : image undefined large | logo undefined large | text top undefined",
-    "elements": {
-      "text": [
-        530,
-        135,
-        655,
-        213
-      ],
-      "image": [
-        525,
-        608,
-        810,
-        738
-      ],
-      "logo": [
-        91,
-        71,
-        111,
-        91
-      ]
-    },
-    "plain_layout_seq": "text 353 90 367 142 | image 350 405 370 315 | logo 60 47 74 60"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          530,
+          135,
+          655,
+          213
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          525,
+          608,
+          810,
+          738
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          91,
+          71,
+          111,
+          91
+        ]
+      }
+    ],
+    "plain_layout_seq": "image 350 405 405 405 | logo 60 47 47 47 | text 353 90 90 90 | "
   },
   {
     "file_name": "biriyani/27nov_6.png",
@@ -817,33 +1201,45 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "food : discount left undefined | image center undefined | logo undefined undefined | text undefined large",
-    "elements": {
-      "logo": [
-        75,
-        77,
-        96,
-        69
-      ],
-      "text": [
-        553,
-        274,
-        745,
-        371
-      ],
-      "image": [
-        537,
-        668,
-        691,
-        466
-      ],
-      "discount": [
-        209,
-        486,
-        196,
-        158
-      ]
-    },
-    "plain_layout_seq": "logo 50 51 64 46 | text 368 182 352 247 | image 358 445 362 275 | discount 139 324 130 105"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          75,
+          77,
+          96,
+          69
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          553,
+          274,
+          745,
+          371
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          537,
+          668,
+          691,
+          466
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          209,
+          486,
+          196,
+          158
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 139 324 324 324 | image 358 445 445 445 | logo 50 51 51 51 | text 368 182 182 182 | "
   },
   {
     "file_name": "ear_phones/black_friday_banner_31.png",
@@ -853,51 +1249,72 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "electronicdevice : button right undefined | contact right undefined | logo undefined undefined | social media undefined undefined | text right undefined | website right undefined",
-    "elements": {
-      "logo": [
-        100,
-        75,
-        133,
-        67
-      ],
-      "social media": [
-        962,
-        76,
-        173,
-        75
-      ],
-      "text": [
-        787,
-        351,
-        475,
-        362
-      ],
-      "discount": [
-        802,
-        615,
-        239,
-        146
-      ],
-      "button": [
-        808,
-        915,
-        207,
-        60
-      ],
-      "contact": [
-        810,
-        972,
-        241,
-        38
-      ],
-      "website": [
-        808,
-        1001,
-        260,
-        31
-      ]
-    },
-    "plain_layout_seq": "logo 66 50 88 44 | social media 641 50 79 50 | text 524 234 196 241 | discount 534 410 159 97 | button 538 610 138 40 | contact 540 648 160 25 | website 538 667 173 20"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          100,
+          75,
+          133,
+          67
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          962,
+          76,
+          173,
+          75
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          787,
+          351,
+          475,
+          362
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          802,
+          615,
+          239,
+          146
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          808,
+          915,
+          207,
+          60
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          810,
+          972,
+          241,
+          38
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          808,
+          1001,
+          260,
+          31
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 538 610 610 610 | contact 540 648 648 648 | discount 534 410 410 410 | logo 66 50 50 50 | social media 641 50 50 50 | text 524 234 234 234 | website 538 667 667 667 | "
   },
   {
     "file_name": "ear_phones/M029T0210 I Cyber Monday Social Media 21SEP23.png",
@@ -907,51 +1324,72 @@
     "ad_width": 4000,
     "ad_height": 4000,
     "serialize_constraints": "electronicdevice : button undefined undefined | contact undefined undefined | image undefined undefined | price right undefined | text top large | website undefined undefined",
-    "elements": {
-      "website": [
-        691,
-        3697,
-        927,
-        213
-      ],
-      "contact": [
-        3419,
-        3712,
-        861,
-        252
-      ],
-      "button": [
-        2008,
-        3689,
-        787,
-        239
-      ],
-      "price": [
-        3163,
-        2036,
-        583,
-        482
-      ],
-      "text": [
-        2019,
-        1060,
-        3061,
-        1330
-      ],
-      "logo": [
-        469,
-        314,
-        561,
-        300
-      ],
-      "image": [
-        1921,
-        2650,
-        1918,
-        1839
-      ]
-    },
-    "plain_layout_seq": "website 124 665 166 38 | contact 615 668 105 45 | button 361 664 141 43 | price 569 366 104 86 | text 363 190 357 239 | logo 84 56 100 54 | image 345 477 345 243"
+    "elements": [
+      {
+        "ele_type": "website",
+        "coordinates": [
+          691,
+          3697,
+          927,
+          213
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          3419,
+          3712,
+          861,
+          252
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          2008,
+          3689,
+          787,
+          239
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          3163,
+          2036,
+          583,
+          482
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          2019,
+          1060,
+          3061,
+          1330
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          469,
+          314,
+          561,
+          300
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          1921,
+          2650,
+          1918,
+          1839
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 361 664 664 664 | contact 615 668 668 668 | image 345 477 477 477 | logo 84 56 56 56 | price 569 366 366 366 | text 363 190 190 190 | website 124 665 665 665 | "
   },
   {
     "file_name": "ear_phones/m038t0050_a_cyber_monday_28aug23.png",
@@ -961,27 +1399,36 @@
     "ad_width": 1080,
     "ad_height": 1080,
     "serialize_constraints": "electronicdevice : discount left undefined | text undefined large",
-    "elements": {
-      "discount": [
-        218,
-        543,
-        251,
-        150
-      ],
-      "image": [
-        558,
-        716,
-        505,
-        550
-      ],
-      "text": [
-        554,
-        245,
-        768,
-        382
-      ]
-    },
-    "plain_layout_seq": "discount 145 362 167 100 | image 372 477 336 243 | text 369 163 351 254"
+    "elements": [
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          218,
+          543,
+          251,
+          150
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          558,
+          716,
+          505,
+          550
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          554,
+          245,
+          768,
+          382
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 145 362 362 362 | image 372 477 477 477 | text 369 163 163 163 | "
   },
   {
     "file_name": "laptop/4439107.png",
@@ -991,39 +1438,72 @@
     "ad_width": 2480,
     "ad_height": 3508,
     "serialize_constraints": "electronicdevice : discount right large | image right undefined | logo top undefined | social media bottom undefined | text left small | text undefined large | text undefined large",
-    "elements": {
-      "logo": [
-        409,
-        203,
-        458,
-        177
-      ],
-      "text": [
-        536,
-        2117,
-        704,
-        458
-      ],
-      "discount": [
-        2059,
-        735,
-        687,
-        700
-      ],
-      "image": [
-        1647,
-        1898,
-        1564,
-        1612
-      ],
-      "social media": [
-        1982,
-        3208,
-        779,
-        192
-      ]
-    },
-    "plain_layout_seq": "logo 83 41 94 36 | text 110 434 144 94 | discount 422 150 87 143 | image 338 389 171 330 | social media 406 658 103 39"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          409,
+          203,
+          458,
+          177
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          908,
+          802,
+          1427,
+          842
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          2059,
+          735,
+          687,
+          700
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          1647,
+          1898,
+          1564,
+          1612
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          1982,
+          3208,
+          779,
+          192
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          551,
+          1636,
+          765,
+          481
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          536,
+          2117,
+          704,
+          458
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 422 150 150 150 | image 338 389 389 389 | logo 83 41 41 41 | social media 406 658 658 658 | text 186 164 164 164 | text 113 335 335 335 | text 110 434 434 434 | "
   },
   {
     "file_name": "laptop/m029t0091_b_black_friday_social_media_26july23.png",
@@ -1033,45 +1513,63 @@
     "ad_width": 4000,
     "ad_height": 4000,
     "serialize_constraints": "electronicdevice : button undefined undefined | price undefined undefined | social media undefined undefined | text undefined undefined",
-    "elements": {
-      "text": [
-        2062,
-        1145,
-        2070,
-        1456
-      ],
-      "image": [
-        2060,
-        2702,
-        2352,
-        1613
-      ],
-      "price": [
-        1215,
-        2195,
-        479,
-        461
-      ],
-      "social media": [
-        3543,
-        323,
-        569,
-        308
-      ],
-      "logo": [
-        476,
-        303,
-        583,
-        200
-      ],
-      "button": [
-        2036,
-        3699,
-        1026,
-        304
-      ]
-    },
-    "plain_layout_seq": "text 371 206 349 262 | image 370 486 350 234 | price 218 395 86 82 | social media 637 58 83 55 | logo 85 54 104 36 | button 366 665 184 54"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          2062,
+          1145,
+          2070,
+          1456
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          2060,
+          2702,
+          2352,
+          1613
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          1215,
+          2195,
+          479,
+          461
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          3543,
+          323,
+          569,
+          308
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          476,
+          303,
+          583,
+          200
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          2036,
+          3699,
+          1026,
+          304
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 366 665 665 665 | image 370 486 486 486 | logo 85 54 54 54 | price 218 395 395 395 | social media 637 58 58 58 | text 371 206 206 206 | "
   },
   {
     "file_name": "laptop/m029t0097_c_black_friday_social_media_03aug23.png",
@@ -1081,57 +1579,81 @@
     "ad_width": 4000,
     "ad_height": 4000,
     "serialize_constraints": "electronicdevice : contact undefined undefined | discount right undefined | price right small | social media undefined undefined | text top undefined | website undefined undefined",
-    "elements": {
-      "logo": [
-        451,
-        284,
-        500,
-        239
-      ],
-      "social media": [
-        3541,
-        330,
-        609,
-        253
-      ],
-      "text": [
-        2115,
-        1110,
-        2139,
-        1856
-      ],
-      "discount": [
-        2932,
-        2349,
-        626,
-        248
-      ],
-      "price": [
-        2964,
-        2556,
-        448,
-        157
-      ],
-      "website": [
-        745,
-        3669,
-        1096,
-        269
-      ],
-      "contact": [
-        3352,
-        3680,
-        961,
-        274
-      ],
-      "image": [
-        2088,
-        2828,
-        2478,
-        1257
-      ]
-    },
-    "plain_layout_seq": "logo 81 51 90 43 | social media 637 59 83 45 | text 380 199 340 334 | discount 527 422 112 44 | price 533 460 80 28 | website 134 660 197 48 | contact 603 662 117 49 | image 375 509 345 211"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          451,
+          284,
+          500,
+          239
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          3541,
+          330,
+          609,
+          253
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          2115,
+          1110,
+          2139,
+          1856
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          2932,
+          2349,
+          626,
+          248
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          2964,
+          2556,
+          448,
+          157
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          745,
+          3669,
+          1096,
+          269
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          3352,
+          3680,
+          961,
+          274
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          2088,
+          2828,
+          2478,
+          1257
+        ]
+      }
+    ],
+    "plain_layout_seq": "contact 603 662 662 662 | discount 527 422 422 422 | image 375 509 509 509 | logo 81 51 51 51 | price 533 460 460 460 | social media 637 59 59 59 | text 380 199 199 199 | website 134 660 660 660 | "
   },
   {
     "file_name": "phone/4439116.png",
@@ -1141,39 +1663,63 @@
     "ad_width": 2480,
     "ad_height": 3508,
     "serialize_constraints": "electronicdevice : discount bottom undefined | image left undefined | social media undefined undefined | text right undefined | text right undefined",
-    "elements": {
-      "image": [
-        651,
-        1392,
-        1081,
-        2015
-      ],
-      "logo": [
-        434,
-        209,
-        492,
-        165
-      ],
-      "text": [
-        1907,
-        1702,
-        845,
-        980
-      ],
-      "discount": [
-        445,
-        2790,
-        661,
-        650
-      ],
-      "social media": [
-        586,
-        3280,
-        758,
-        131
-      ]
-    },
-    "plain_layout_seq": "image 133 285 221 413 | logo 89 42 100 33 | text 391 349 118 201 | discount 91 572 135 133 | social media 120 673 155 26"
+    "elements": [
+      {
+        "ele_type": "image",
+        "coordinates": [
+          651,
+          1392,
+          1081,
+          2015
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          434,
+          209,
+          492,
+          165
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          1760,
+          725,
+          1268,
+          742
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          1907,
+          1702,
+          845,
+          980
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          445,
+          2790,
+          661,
+          650
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          586,
+          3280,
+          758,
+          131
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 91 572 572 572 | image 133 285 285 285 | logo 89 42 42 42 | social media 120 673 673 673 | text 361 148 148 148 | text 391 349 349 349 | "
   },
   {
     "file_name": "phone/10132101.png",
@@ -1183,21 +1729,36 @@
     "ad_width": 1200,
     "ad_height": 628,
     "serialize_constraints": "electronicdevice : image right undefined | text left undefined | text left undefined",
-    "elements": {
-      "text": [
-        299,
-        398,
-        392,
-        73
-      ],
-      "image": [
-        825,
-        293,
-        529,
-        559
-      ]
-    },
-    "plain_layout_seq": "text 179 238 235 43 | image 495 175 225 201"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          303,
+          214,
+          407,
+          260
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          299,
+          398,
+          392,
+          73
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          825,
+          293,
+          529,
+          559
+        ]
+      }
+    ],
+    "plain_layout_seq": "image 495 175 175 175 | text 181 128 128 128 | text 179 238 238 238 | "
   },
   {
     "file_name": "phone/8249496.png",
@@ -1207,33 +1768,54 @@
     "ad_width": 1200,
     "ad_height": 628,
     "serialize_constraints": "electronicdevice : discount left undefined | image left undefined | image right undefined | logo right undefined | text right undefined | text right undefined",
-    "elements": {
-      "image": [
-        288,
-        241,
-        398,
-        410
-      ],
-      "discount": [
-        137,
-        263,
-        161,
-        164
-      ],
-      "text": [
-        853,
-        397,
-        571,
-        68
-      ],
-      "logo": [
-        1067,
-        76,
-        157,
-        63
-      ]
-    },
-    "plain_layout_seq": "image 172 144 238 232 | discount 82 157 96 98 | text 511 238 209 40 | logo 640 45 80 37"
+    "elements": [
+      {
+        "ele_type": "image",
+        "coordinates": [
+          288,
+          241,
+          398,
+          410
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          137,
+          263,
+          161,
+          164
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          849,
+          282,
+          598,
+          149
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          1067,
+          76,
+          157,
+          63
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          853,
+          397,
+          571,
+          68
+        ]
+      }
+    ],
+    "plain_layout_seq": "discount 82 157 157 157 | image 172 144 144 144 | logo 640 45 45 45 | text 509 169 169 169 | text 511 238 238 238 | "
   },
   {
     "file_name": "phone/a468f7b40c1ad9af190fa906766441df.jpg",
@@ -1243,33 +1825,63 @@
     "ad_width": 564,
     "ad_height": 1002,
     "serialize_constraints": "electronicdevice : icon undefined undefined | icon undefined undefined | icon undefined undefined | image undefined undefined | price left undefined | text top undefined",
-    "elements": {
-      "text": [
-        148,
-        146,
-        239,
-        161
-      ],
-      "price": [
-        127,
-        515,
-        191,
-        74
-      ],
-      "icon": [
-        278,
-        770,
-        78,
-        82
-      ],
-      "image": [
-        375,
-        535,
-        295,
-        376
-      ]
-    },
-    "plain_layout_seq": "text 106 104 171 115 | price 91 370 137 53 | icon 199 553 56 58 | image 269 384 136 270"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          148,
+          146,
+          239,
+          161
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          127,
+          515,
+          191,
+          74
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          116,
+          771,
+          43,
+          81
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          186,
+          771,
+          87,
+          86
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          278,
+          770,
+          78,
+          82
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          375,
+          535,
+          295,
+          376
+        ]
+      }
+    ],
+    "plain_layout_seq": "icon 83 554 554 554 | icon 133 554 554 554 | icon 199 553 553 553 | image 269 384 384 384 | price 91 370 370 370 | text 106 104 104 104 | "
   },
   {
     "file_name": "phone/c0761c65defb27678eeb8c8d132596ae.jpg",
@@ -1279,33 +1891,54 @@
     "ad_width": 564,
     "ad_height": 705,
     "serialize_constraints": "electronicdevice : contact undefined undefined | image left large | price right undefined | text right undefined | text right undefined",
-    "elements": {
-      "image": [
-        189,
-        307,
-        232,
-        415
-      ],
-      "contact": [
-        400,
-        672,
-        290,
-        42
-      ],
-      "text": [
-        448,
-        393,
-        212,
-        109
-      ],
-      "price": [
-        445,
-        499,
-        194,
-        57
-      ]
-    },
-    "plain_layout_seq": "image 193 313 236 407 | contact 408 686 168 34 | text 457 401 119 111 | price 454 509 122 58"
+    "elements": [
+      {
+        "ele_type": "image",
+        "coordinates": [
+          189,
+          307,
+          232,
+          415
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          400,
+          672,
+          290,
+          42
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          438,
+          250,
+          237,
+          112
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          448,
+          393,
+          212,
+          109
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          445,
+          499,
+          194,
+          57
+        ]
+      }
+    ],
+    "plain_layout_seq": "contact 408 686 686 686 | image 193 313 313 313 | price 454 509 509 509 | text 447 255 255 255 | text 457 401 401 401 | "
   },
   {
     "file_name": "phone/phone1.jpg",
@@ -1315,51 +1948,81 @@
     "ad_width": 564,
     "ad_height": 634,
     "serialize_constraints": "electronicdevice : button undefined undefined | contact undefined undefined | image undefined undefined | price right undefined | social media undefined undefined | text top undefined | text right undefined | text undefined undefined",
-    "elements": {
-      "logo": [
-        56,
-        58,
-        52,
-        48
-      ],
-      "text": [
-        456,
-        284,
-        156,
-        285
-      ],
-      "social media": [
-        502,
-        44,
-        70,
-        26
-      ],
-      "button": [
-        430,
-        515,
-        106,
-        36
-      ],
-      "contact": [
-        115,
-        587,
-        165,
-        22
-      ],
-      "image": [
-        219,
-        297,
-        320,
-        343
-      ],
-      "price": [
-        424,
-        452,
-        98,
-        21
-      ]
-    },
-    "plain_layout_seq": "logo 63 65 59 54 | text 517 322 123 323 | social media 570 49 70 29 | button 488 584 120 40 | contact 130 666 187 24 | image 248 337 363 383 | price 481 513 111 23"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          56,
+          58,
+          52,
+          48
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          279,
+          61,
+          306,
+          39
+        ]
+      },
+      {
+        "ele_type": "social media",
+        "coordinates": [
+          502,
+          44,
+          70,
+          26
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          430,
+          515,
+          106,
+          36
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          115,
+          587,
+          165,
+          22
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          219,
+          297,
+          320,
+          343
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          456,
+          284,
+          156,
+          285
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          424,
+          452,
+          98,
+          21
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 488 584 584 584 | contact 130 666 666 666 | image 248 337 337 337 | logo 63 65 65 65 | price 481 513 513 513 | social media 570 49 49 49 | text 316 69 69 69 | text 517 322 322 322 | "
   },
   {
     "file_name": "ear_phones/7f31b1682222bb5ee85e2ea9bff5efb6.jpg",
@@ -1369,27 +2032,45 @@
     "ad_width": 544,
     "ad_height": 680,
     "serialize_constraints": "electronicdevice : company name top undefined | image undefined undefined | text bottom undefined | text bottom undefined",
-    "elements": {
-      "company name": [
-        64,
-        37,
-        89,
-        31
-      ],
-      "text": [
-        277,
-        613,
-        413,
-        67
-      ],
-      "image": [
-        267,
-        258,
-        181,
-        218
-      ]
-    },
-    "plain_layout_seq": "company name 67 39 94 32 | text 293 649 283 70 | image 282 273 191 230"
+    "elements": [
+      {
+        "ele_type": "company name",
+        "coordinates": [
+          64,
+          37,
+          89,
+          31
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          275,
+          533,
+          179,
+          36
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          277,
+          613,
+          413,
+          67
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          267,
+          258,
+          181,
+          218
+        ]
+      }
+    ],
+    "plain_layout_seq": "company name 67 39 39 39 | image 282 273 273 273 | text 291 564 564 564 | text 293 649 649 649 | "
   },
   {
     "file_name": "ear_phones/5118bd5476bc91796c7b7b88b7458b65.jpg",
@@ -1399,21 +2080,36 @@
     "ad_width": 564,
     "ad_height": 1002,
     "serialize_constraints": "electronicdevice : image undefined undefined | text top undefined | text undefined small",
-    "elements": {
-      "text": [
-        278,
-        225,
-        463,
-        28
-      ],
-      "image": [
-        280,
-        528,
-        391,
-        543
-      ]
-    },
-    "plain_layout_seq": "text 199 161 206 20 | image 201 379 204 341"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          284,
+          141,
+          365,
+          137
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          278,
+          225,
+          463,
+          28
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          280,
+          528,
+          391,
+          543
+        ]
+      }
+    ],
+    "plain_layout_seq": "image 201 379 379 379 | text 204 101 101 101 | text 199 161 161 161 | "
   },
   {
     "file_name": "ear_phones/91146036fe389f3fa29f4a914ffe9f46.jpg",
@@ -1423,39 +2119,99 @@
     "ad_width": 563,
     "ad_height": 493,
     "serialize_constraints": "electronicdevice : icon undefined large | icon undefined large | icon undefined large | image undefined undefined | logo left undefined | price undefined undefined | text left undefined",
-    "elements": {
-      "logo": [
-        38,
-        81,
-        23,
-        37
-      ],
-      "text": [
-        141,
-        82,
-        177,
-        49
-      ],
-      "image": [
-        414,
-        302,
-        288,
-        324
-      ],
-      "price": [
-        391,
-        402,
-        206,
-        43
-      ],
-      "icon": [
-        176,
-        406,
-        81,
-        79
-      ]
-    },
-    "plain_layout_seq": "logo 48 103 29 47 | text 180 104 226 62 | image 529 386 191 244 | price 500 514 220 54 | icon 225 519 103 101"
+    "elements": [
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          38,
+          81,
+          23,
+          37
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          141,
+          82,
+          177,
+          49
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          414,
+          302,
+          288,
+          324
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          391,
+          402,
+          206,
+          43
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          81,
+          221,
+          56,
+          80
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          176,
+          224,
+          97,
+          79
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          79,
+          311,
+          63,
+          66
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          176,
+          313,
+          112,
+          73
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          80,
+          395,
+          103,
+          84
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          176,
+          406,
+          81,
+          79
+        ]
+      }
+    ],
+    "plain_layout_seq": "icon 103 282 282 282 | icon 225 286 286 286 | icon 101 397 397 397 | icon 225 400 400 400 | icon 102 505 505 505 | icon 225 519 519 519 | image 529 386 386 386 | logo 48 103 103 103 | price 500 514 514 514 | text 180 104 104 104 | "
   },
   {
     "file_name": "watch/7f4e106467beb04fe7b97d3396530cba.jpg",
@@ -1465,27 +2221,45 @@
     "ad_width": 563,
     "ad_height": 626,
     "serialize_constraints": "electronicdevice : image undefined undefined | price undefined undefined | text top large | text undefined small",
-    "elements": {
-      "text": [
-        283,
-        123,
-        402,
-        28
-      ],
-      "image": [
-        273,
-        350,
-        304,
-        290
-      ],
-      "price": [
-        288,
-        163,
-        160,
-        35
-      ]
-    },
-    "plain_layout_seq": "text 325 141 322 32 | image 313 402 334 318 | price 331 187 184 40"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          282,
+          70,
+          211,
+          77
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          273,
+          350,
+          304,
+          290
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          288,
+          163,
+          160,
+          35
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          283,
+          123,
+          402,
+          28
+        ]
+      }
+    ],
+    "plain_layout_seq": "image 313 402 402 402 | price 331 187 187 187 | text 324 80 80 80 | text 325 141 141 141 | "
   },
   {
     "file_name": "watch/532411abefaf0ab07ebb44572f78eca9.jpg",
@@ -1495,39 +2269,81 @@
     "ad_width": 564,
     "ad_height": 564,
     "serialize_constraints": "electronicdevice : company name undefined undefined | icon left undefined | icon left undefined | icon right undefined | icon right undefined | image undefined undefined | price bottom undefined | text undefined undefined",
-    "elements": {
-      "icon": [
-        478,
-        240,
-        90,
-        93
-      ],
-      "company name": [
-        506,
-        36,
-        90,
-        43
-      ],
-      "text": [
-        283,
-        398,
-        321,
-        79
-      ],
-      "price": [
-        391,
-        483,
-        167,
-        77
-      ],
-      "image": [
-        279,
-        219,
-        202,
-        262
-      ]
-    },
-    "plain_layout_seq": "icon 610 306 110 118 | company name 645 45 75 54 | text 361 508 359 100 | price 499 616 213 98 | image 356 279 257 334"
+    "elements": [
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          80,
+          128,
+          63,
+          87
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          75,
+          241,
+          70,
+          83
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          478,
+          131,
+          97,
+          93
+        ]
+      },
+      {
+        "ele_type": "icon",
+        "coordinates": [
+          478,
+          240,
+          90,
+          93
+        ]
+      },
+      {
+        "ele_type": "company name",
+        "coordinates": [
+          506,
+          36,
+          90,
+          43
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          283,
+          398,
+          321,
+          79
+        ]
+      },
+      {
+        "ele_type": "price",
+        "coordinates": [
+          391,
+          483,
+          167,
+          77
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          279,
+          219,
+          202,
+          262
+        ]
+      }
+    ],
+    "plain_layout_seq": "company name 645 45 45 45 | icon 102 163 163 163 | icon 95 307 307 307 | icon 610 167 167 167 | icon 610 306 306 306 | image 356 279 279 279 | price 499 616 616 616 | text 361 508 508 508 | "
   },
   {
     "file_name": "watch/be334e13334fc615855eaa53498ec5cf.jpg",
@@ -1537,51 +2353,81 @@
     "ad_width": 564,
     "ad_height": 564,
     "serialize_constraints": "electronicdevice : button undefined undefined | contact undefined undefined | discount undefined undefined | image left large | logo undefined undefined | text undefined small | text undefined large | website undefined undefined",
-    "elements": {
-      "text": [
-        121,
-        184,
-        204,
-        39
-      ],
-      "logo": [
-        504,
-        48,
-        65,
-        49
-      ],
-      "button": [
-        109,
-        237,
-        159,
-        45
-      ],
-      "contact": [
-        102,
-        502,
-        145,
-        20
-      ],
-      "website": [
-        103,
-        524,
-        159,
-        18
-      ],
-      "discount": [
-        98,
-        340,
-        112,
-        104
-      ],
-      "image": [
-        433,
-        305,
-        261,
-        420
-      ]
-    },
-    "plain_layout_seq": "text 154 234 260 49 | logo 643 61 77 62 | button 139 302 202 57 | contact 130 640 185 25 | website 131 668 202 22 | discount 125 434 142 132 | image 552 389 168 331"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          166,
+          102,
+          278,
+          120
+        ]
+      },
+      {
+        "ele_type": "logo",
+        "coordinates": [
+          504,
+          48,
+          65,
+          49
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          109,
+          237,
+          159,
+          45
+        ]
+      },
+      {
+        "ele_type": "contact",
+        "coordinates": [
+          102,
+          502,
+          145,
+          20
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          103,
+          524,
+          159,
+          18
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          98,
+          340,
+          112,
+          104
+        ]
+      },
+      {
+        "ele_type": "text",
+        "coordinates": [
+          121,
+          184,
+          204,
+          39
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          433,
+          305,
+          261,
+          420
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 139 302 302 302 | contact 130 640 640 640 | discount 125 434 434 434 | image 552 389 389 389 | logo 643 61 61 61 | text 211 130 130 130 | text 154 234 234 234 | website 131 668 668 668 | "
   },
   {
     "file_name": "watch/d422a41a2c8aca17defd6bb0b48d7c37.jpg",
@@ -1591,45 +2437,63 @@
     "ad_width": 375,
     "ad_height": 372,
     "serialize_constraints": "electronicdevice : address undefined undefined | button undefined undefined | company name undefined undefined | discount undefined undefined | image center undefined | text undefined large",
-    "elements": {
-      "text": [
-        108,
-        45,
-        173,
-        54
-      ],
-      "button": [
-        76,
-        133,
-        110,
-        27
-      ],
-      "image": [
-        193,
-        216,
-        178,
-        208
-      ],
-      "address": [
-        217,
-        350,
-        301,
-        30
-      ],
-      "company name": [
-        60,
-        282,
-        107,
-        36
-      ],
-      "discount": [
-        318,
-        138,
-        67,
-        66
-      ]
-    },
-    "plain_layout_seq": "text 207 86 332 103 | button 145 255 211 51 | image 370 414 341 300 | address 416 672 304 42 | company name 115 541 205 69 | discount 610 264 110 126"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          108,
+          45,
+          173,
+          54
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          76,
+          133,
+          110,
+          27
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          193,
+          216,
+          178,
+          208
+        ]
+      },
+      {
+        "ele_type": "address",
+        "coordinates": [
+          217,
+          350,
+          301,
+          30
+        ]
+      },
+      {
+        "ele_type": "company name",
+        "coordinates": [
+          60,
+          282,
+          107,
+          36
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          318,
+          138,
+          67,
+          66
+        ]
+      }
+    ],
+    "plain_layout_seq": "address 416 672 672 672 | button 145 255 255 255 | company name 115 541 541 541 | discount 610 264 264 264 | image 370 414 414 414 | text 207 86 86 86 | "
   },
   {
     "file_name": "watch/e.jpg",
@@ -1639,44 +2503,62 @@
     "ad_width": 360,
     "ad_height": 640,
     "serialize_constraints": "electronicdevice : button right undefined | discount left undefined | image undefined undefined | qr code right undefined | text undefined large | website undefined undefined",
-    "elements": {
-      "text": [
-        183,
-        113,
-        269,
-        106
-      ],
-      "discount": [
-        78,
-        236,
-        79,
-        72
-      ],
-      "button": [
-        286,
-        261,
-        85,
-        33
-      ],
-      "qr code": [
-        285,
-        220,
-        55,
-        55
-      ],
-      "image": [
-        182,
-        322,
-        151,
-        183
-      ],
-      "website": [
-        186,
-        552,
-        176,
-        23
-      ]
-    },
-    "plain_layout_seq": "text 205 127 200 119 | discount 87 265 88 81 | button 321 293 84 37 | qr code 320 247 61 61 | image 204 362 169 205 | website 209 621 196 25"
+    "elements": [
+      {
+        "ele_type": "text",
+        "coordinates": [
+          183,
+          113,
+          269,
+          106
+        ]
+      },
+      {
+        "ele_type": "discount",
+        "coordinates": [
+          78,
+          236,
+          79,
+          72
+        ]
+      },
+      {
+        "ele_type": "button",
+        "coordinates": [
+          286,
+          261,
+          85,
+          33
+        ]
+      },
+      {
+        "ele_type": "qr code",
+        "coordinates": [
+          285,
+          220,
+          55,
+          55
+        ]
+      },
+      {
+        "ele_type": "image",
+        "coordinates": [
+          182,
+          322,
+          151,
+          183
+        ]
+      },
+      {
+        "ele_type": "website",
+        "coordinates": [
+          186,
+          552,
+          176,
+          23
+        ]
+      }
+    ],
+    "plain_layout_seq": "button 321 293 293 293 | discount 87 265 265 265 | image 204 362 362 362 | qr code 320 247 247 247 | text 205 127 127 127 | website 209 621 621 621 | "
   }
 ]

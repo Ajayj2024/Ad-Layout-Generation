@@ -1,5 +1,5 @@
-import sys, os, re
-sys.path.append(os.getcwd(), 'src')
+import os, sys, re
+sys.path.append(os.path.join(os.getcwd(), 'src'))
 
 import math
 import numpy as np

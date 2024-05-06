@@ -1,0 +1,62 @@
+[
+    {
+      "file_name": "burger/03nov6.png",
+      "region": "Food",
+      "text": "A burger ad, the title is on top, product image is on middle, big discount tag on right side, order now button at button, contact information, website on bottom-right, qr code, logo",
+      "ir": "[region:Food [el:text [attr:position'top']] [el:image [attr:position'center']] [el:discount [attr:position'top'] [attr:size'large']] [el:button [attr:position'bottom']] [el:contact][el:website [attr:position'bottom']][el:qr code][el:logo] [el:button [attr:position'top']] [el:button [attr:position'left']]]",
+      "ad_width": 1080,
+      "ad_height": 1080,
+      "serialize_constraints": "food : button top small | button top undefined | button bottom undefined | button left undefined| button undefined small | button undefined small | button undefined undefined | contact undefined undefined | discount top large | image center undefined | logo undefined undefined | qr code undefined undefined | text top undefined | website bottom undefined",
+      "elements": {
+        "logo": [
+          69,
+          71,
+          75,
+          60
+        ],
+        "text": [
+          519,
+          211,
+          647,
+          280
+        ],
+        "qr code": [
+          1016,
+          67,
+          76,
+          70
+        ],
+        "image": [
+          536,
+          664,
+          594,
+          534
+        ],
+        "discount": [
+          910,
+          684,
+          279,
+          323
+        ],
+        "contact": [
+          202,
+          1024,
+          280,
+          84
+        ],
+        "button": [
+          533,
+          1025,
+          234,
+          79
+        ],
+        "website": [
+          876,
+          1031,
+          300,
+          64
+        ]
+      },
+      "plain_layout_seq": "logo 46 47 50 40 | text 346 140 374 186 | qr code 677 44 43 46 | image 357 442 363 278 | discount 606 456 114 215 | contact 134 682 186 38 | button 355 683 156 37 | button 1 89 156 37 | button 23 1 156 37| button 23 1 5 37 |website 584 687 136 33 | button 45 67 2 2 | button 100 100 4 10 | button 105 112 50 10"
+    }
+  ]

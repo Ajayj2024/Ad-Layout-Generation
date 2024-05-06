@@ -11,7 +11,7 @@ class Config:
         parser = argparse.ArgumentParser()
 
         # ----------training args------------
-        parser.add_argument("--epochs", default=1, type=int)
+        parser.add_argument("--epochs", default=2, type=int)
         parser.add_argument("--batch_size", default=2, type=int)
         parser.add_argument("--lr", default=1e-4, type=float)
         parser.add_argument("--weight_decay", default=0, type=float)

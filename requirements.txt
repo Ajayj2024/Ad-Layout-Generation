@@ -8,3 +8,4 @@ matplotlib
 SentencePiece
 transformers
 wandb
+pytorch_fid
