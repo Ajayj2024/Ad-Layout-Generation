@@ -5,7 +5,7 @@ import errno
 import random as rn
 import numpy as np
 import torch
-from utils.exception import CustomeException
+from exception import CustomeException
 
 
 DATA2LABEL = {

@@ -202,6 +202,7 @@ def main():
     set_seed(training_args.seed)
 
     tokenizer = AutoTokenizer.from_pretrained(model_args.model_name, use_fast=False)
+    print("Loading Tokenizer")
     logging.info("Tokenizer Loaded")
     # if model_args.tuning_method == ModelArguments.PROMPT_TUNING:
     #     logger.info("Use prompt tuning")
@@ -258,7 +259,7 @@ def main():
         #         optimizer=optimizer
         #     )
         # else:
-        print("Training")
+        print("Training Started...........")
         trainer = BasicTrainer(args= training_args,
                                model= plm, 
                                train_dataset= train_dataset, 
@@ -268,6 +269,7 @@ def main():
                                metric= [AccuracyMetrics(), LossMetrics(), EleAccuracyMetrics(), SetAccuracyMetrics()])
         train_fn = TrainerBatchLoss(training_args.label_smoothing_factor)
         trainer(train_fn, eval_fn)
+        print("Training Ended...........")
     elif training_args.do_eval:
         logging.info("Inference...")
         generator = Generator(args=training_args, plm=plm, dataset=eval_dataset,

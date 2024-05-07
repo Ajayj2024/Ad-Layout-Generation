@@ -134,8 +134,8 @@ class Trainer:
                             progress_bar.set_postfix(NLL=loss_meter.average)
                         # if self.config.args.use_wandb:
                         #     wandb.log({'valid loss': loss_meter.avg}, step)
-                    self.model.save_pretrained(f"{self.config.args.out_dir}/epoch-{epoch}-loss-{loss_meter.average}")
-                    self.tokenizer.save_pretrained(f"{self.config.args.out_dir}/epoch-{epoch}-loss-{loss_meter.average}")
+            self.model.save_pretrained(f"{self.config.args.out_dir}/place_stage_model_epoch-{epoch}_{loss_meter.average}")
+            self.tokenizer.save_pretrained(f"{self.config.args.out_dir}/place_stage_tokenizer_epoch-{epoch}_{loss_meter.average}")
 
     def test(self, test_loader):
         logging.info("-------------start testing-------------")

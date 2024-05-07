@@ -1,4 +1,4 @@
-from sys, os
+import sys, os
 sys.path.append(os.path.join(os.getcwd(), 'src'))
 from config.config import Config
 from utils.file_utils import *

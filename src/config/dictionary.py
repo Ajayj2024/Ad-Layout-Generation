@@ -38,3 +38,21 @@ LABEL2ID = {
 }
 
 CANVAS_SIZE = [720, 720]
+
+LABEL2COLORS = {
+    'text': 'black',
+    'social media': 'red',
+    'image': 'blue',
+    'logo': 'yellow',
+    'delivery text': 'green',
+    'button': 'brown',
+    'contact': 'orange',
+    'discount': 'pink',
+    'qr code': 'violet',
+    'website': 'purple',
+    'price': 'darkblue',
+    'timing': 'darkgreen',
+    'address': 'tan',
+    'company name': 'lightgreen',
+    'icon': 'grey'
+}
